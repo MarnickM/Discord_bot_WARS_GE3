@@ -1,0 +1,41 @@
+      
+                                                          # fifteen_hour_mark = war_start_time + timedelta(hours=15)
+                                                          # now = datetime.now()
+      
+                                                          # remainingTime = db_operations.calculate_remaining_time(our_score, their_score)
+                                                          # if remainingTime == "no points yet":
+                                                          #     remainingTime = int(fifteen_hour_mark.timestamp())
+                                                          
+                                                          # if remainingTime is not None and remainingTime != "no points yet":
+                                                          #     # remaining_time = timedelta(seconds=remaining_time_seconds)
+                                                          #     # remaining_time_str = str(remaining_time)
+                                                          #     remaining_time = int((datetime.now() + timedelta(seconds=remainingTime)).timestamp())
+                                                          #     remaining_time_delta = timedelta(seconds=remainingTime)
+                                                          #     calculated_end_time = now + remaining_time_delta
+                                                          #     if now < fifteen_hour_mark:
+                                                          #         remainingTime = int(fifteen_hour_mark.timestamp())
+                                                          #     else:
+                                                          #          remainingTime = int(calculated_end_time.timestamp())
+                                                          # else:
+                                                          #     remaining_time = "Not available"
+                                                          # Calculate the 15-hour mark from the war start time
+                                                        #   fifteen_hour_mark = war_start_time + timedelta(hours=14) + timedelta(minutes=10)
+                                                          
+                                                          # Calculate remaining time based on the score
+                                                          remaining_time = db_operations.calculate_remaining_time(our_score, their_score, war_start_time)
+                                                        #   if remainingTime == "no points yet":
+                                                        #       # Set remainingTime to the 15-hour mark if no points yet
+                                                        #       remainingTime = fifteen_hour_mark.timestamp()
+                                                        #   else:
+                                                        #       # Convert remainingTime to a timedelta
+                                                        #       remaining_time_delta = timedelta(seconds=remainingTime)
+                                                        #       calculated_end_time = current_time + remaining_time_delta
+                                                          
+                                                        #       # Determine the appropriate end time
+                                                        #       if current_time < fifteen_hour_mark:
+                                                        #           remainingTime = fifteen_hour_mark.timestamp()
+                                                        #       else:
+                                                        #           remainingTime = calculated_end_time.timestamp()
+                                                          
+                                                        #   # Ensure remainingTime is an integer Unix timestamp
+                                                        #   remaining_time = int(remainingTime)
